@@ -1,1 +1,3 @@
-ansible
+---
+- name: all_inventory
+  import_tasks: all_inventory.yml
