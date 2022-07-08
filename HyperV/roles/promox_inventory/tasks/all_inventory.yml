@@ -1,0 +1,21 @@
+- hosts: all
+  gather_facts: false
+  connection: local
+  vars:
+    cluster_name: Cluster
+    pve_name: https://SRVHYPERV00PRD.abest.intra:8006
+    pve_datastore_name_1: VM_Site1
+    pve_datastore_name_2: VM_Site2
+    pve_usr : root@pam
+    pve_mdp: $$ToTo.com11
+    guest_domain: abest.intra
+    ip_netmask: 255.255.255.0
+    ip_gateway: 192.168.1.254
+    dns_server1: 192.168.1.205
+    dns_server2: 192.168.1.210
+  
+  tasks:
+    url: "{{ pve_name }}"
+    user: "{{ pve_usr }}"
+    password: "{{ pve_mdp }}"
+    validate_certs: no
