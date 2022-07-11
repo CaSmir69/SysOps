@@ -1,4 +1,4 @@
 ---
 - hosts: localhost
   roles: 
-    - proxmox_inventory
+    - all_inventory
