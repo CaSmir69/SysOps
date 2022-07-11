@@ -1,4 +1,4 @@
 ---
 - hosts: localhost
   roles: 
-    - promox_inventory
+    - proxmox_inventory
