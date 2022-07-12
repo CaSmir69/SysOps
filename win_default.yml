@@ -3,4 +3,4 @@
   tasks:
   - name: Ping Windows Hosts
     ansible.windows.win_ping:
-    data: crash
+    tags: Ping
