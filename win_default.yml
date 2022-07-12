@@ -2,5 +2,5 @@
 - hosts: localhost
   tasks:
   - name: Ping Windows Hosts
-    ansible.windows.win_ping:
+    win_ping:
     tags: Ping
